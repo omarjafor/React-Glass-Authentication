@@ -15,9 +15,9 @@ const Home = () => {
     } , [])
     return (
         <>
-            <Banner />
-            <ShowProduct name={'Top rated'} sunglasses={sunglasses.slice(5, 10)} />
-            <ShowProduct name={'Best sellers'} sunglasses={sunglasses.slice(0, 5)} />
+            <Banner></Banner>
+            <ShowProduct name={'Top Rated'} sunglasses={sunglasses.slice(5, 10)} />
+            <ShowProduct name={'Best Sellers'} sunglasses={sunglasses.slice(0, 5)} />
             <About />
         </>
     );
