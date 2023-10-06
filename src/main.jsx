@@ -5,13 +5,20 @@ import './index.css'
 import Root from './Root/Root';
 import AuthProvider from './Provider/AuthProvider';
 import ErrorPage from './Components/ErrorPage';
+import Home from './Pages/Home/Home';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: '',
+        element: <Home></Home>
+      }
+    ]
   },
 ]);
 
